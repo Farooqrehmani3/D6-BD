@@ -216,7 +216,7 @@ export default function Header() {
             <img
               src="/couple.jpeg"
               alt="Asian"
-              className="w-[90%] max-w-[400px] sm:max-w-[500px] lg:w-[725px] lg:h-[674px] object-cover ml-18"
+              className="w-[90%] max-w-[400px] sm:max-w-[500px] lg:w-[725px] lg:h-[574px] object-cover ml-18"
             />
           </div>
         </div>
@@ -243,10 +243,126 @@ export default function Header() {
           </div>
         </div>
       </div>
+      <div className="w-[1440px] rounded-[5px] absolute bg-[#23856D] mt-[-130px] top-[3200px] border">
+            <div className="w-[1440px] h-[709px]">
+             <div className="w-[1440px] h-[709px]">
+                <div className="w-[1036px] h-[711px] absolute left-[209px] py-[112px] flex  gap-[80px]">
+                    <div className="w-[1049px] h-[599px] flex  gap-[30px]">
+                        <div className="w-[509px] h-[432px] pt-[60px] flex flex-col gap-[30px]">
+                            <h4 className="w-[154px] h-[30px] font-Montserrat font-normal text-[20px] leading-[30px] text-white">SUMMER 2020</h4>
+                            <h1 className="w-[509px] h-[160px] font-Montserrat font-bold text-[58px] leading-[80px] text-white">Vita Classic Product</h1>
+                            <p className="w-[341px] h-[40px] font-Montserrat font-medium text-[14px] leading-[20px] text-white">We know how large objects will act, We know how are objects will act, We know</p>
+                            <div className="w-[295px] h-[52px] flex gap-[34px]">
+                                <h3 className="w-[77px] h-[32px] font-Montserrat font-bold text-[24px] leading-[32px] text-white">$16.48</h3>
+                                <button className="w-[184px] h-[52px] rounded-[5px] px-[40px] bg-[#2DC071] py-[15px] flex gap-[10px]">
+                                    <h1 className="w-[104px] h-[22px] font-Montserrat text-[14px] leading-[22px] flex text-white justify-center ">ADD TO CART</h1>
+                                </button>
+                            </div>
+                        </div>
+                        <div className="w-[610px] item-center ">
+                          <Image src="/greenman.jpeg" alt="greenman" height={500} width={350}/>
+                        </div>
+                    </div>
+                </div>
+             </div>
+            </div>
+        </div>
+
+        <div className="max-w-screen-xl mx-auto flex justify-between items-center">
+                    <div className="flex flex-col">
+                        <h1 className="text-[#252b42] text-2xl font-bold leading-loose tracking-tight">Bandage</h1>
+                    </div>
+                    <div className="flex gap-6">
+                        <Image src="/fb.jpg" alt="fb" height={6} width={6} />
+                        <Image src={"/instagram.jpg"} alt="fb"  height={6} width={6} />
+                        <Image src={"/twitter.png"} alt="fb"  height={6} width={6} />
+                    </div>
+                </div>
+            
+  
+            {/* Divider */}
+            <div className="border-t border-[#e6e6e6]" />
+  
+            {/* Main Footer Content */}
+            <section className="bg-white py-12">
+                <div className="max-w-screen-xl mx-auto grid grid-cols-1 md:grid-cols-5 gap-12">
+                    {/* Company Info */}
+                    <div>
+                        <h2 className="text-[#252b42] text-base font-bold">Company Info</h2>
+                        <nav className="flex flex-col gap-2.5 mt-3">
+                            <a href="#" className="text-[#727272] text-sm font-bold">About Us</a>
+                            <a href="#" className="text-[#727272] text-sm font-bold">Careers</a>
+                            <a href="#" className="text-[#727272] text-sm font-bold">We Are Hiring</a>
+                            <a href="#" className="text-[#727272] text-sm font-bold">Blog</a>
+                        </nav>
+                    </div>
+  
+                    {/* Legal */}
+                    <div>
+                        <h2 className="text-[#252b42] text-base font-bold">Legal</h2>
+                        <nav className="flex flex-col gap-2.5 mt-3">
+                            <a href="#" className="text-[#727272] text-sm font-bold">Terms of Service</a>
+                            <a href="#" className="text-[#727272] text-sm font-bold">Privacy Policy</a>
+                            <a href="#" className="text-[#727272] text-sm font-bold">Cookies</a>
+                            <a href="#" className="text-[#727272] text-sm font-bold">Refund Policy</a>
+                        </nav>
+                    </div>
+  
+                    {/* Features */}
+                    <div>
+                        <h2 className="text-[#252b42] text-base font-bold">Features</h2>
+                        <nav className="flex flex-col gap-2.5 mt-3">
+                            <a href="#" className="text-[#727272] text-sm font-bold">Business Marketing</a>
+                            <a href="#" className="text-[#727272] text-sm font-bold">User Analytics</a>
+                            <a href="#" className="text-[#727272] text-sm font-bold">Live Chat</a>
+                            <a href="#" className="text-[#727272] text-sm font-bold">Unlimited Support</a>
+                        </nav>
+                    </div>
+  
+                    {/* Resources */}
+                    <div>
+                        <h2 className="text-[#252b42] text-base font-bold">Resources</h2>
+                        <nav className="flex flex-col gap-2.5 mt-3">
+                            <a href="#" className="text-[#727272] text-sm font-bold">iOS & Android</a>
+                            <a href="#" className="text-[#727272] text-sm font-bold">Watch a Demo</a>
+                            <a href="#" className="text-[#727272] text-sm font-bold">Customers</a>
+                            <a href="#" className="text-[#727272] text-sm font-bold">API</a>
+                        </nav>
+                    </div>
+  
+                    {/* Get in Touch */}
+                    <div>
+                        <h2 className="text-[#252b42] text-base font-bold">Get In Touch</h2>
+                        <div className="mt-3">
+                            <div className="relative mb-4">
+                                <input
+                                    type="email"
+                                    className="w-[221px] h-12 px-4 border border-[#e6e6e6] rounded-lg bg-[#f8f8f8] text-[#727272] text-sm font-normal"
+                                    placeholder="Your Email"
+                                />
+                                <button className="absolute right-0 top-0 h-12 px-4 bg-[#23a6f0] text-white text-sm font-normal rounded-r-lg">
+                                    Subscribe
+                                </button>
+                            </div>
+                            <p className="text-[#727272] text-xs">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+  
+            {/* Bottom Section */}
+            <section className="bg-[#f9f9f9] py-4">
+                <div className="max-w-screen-xl mx-auto flex justify-between items-center">
+                    <p className="text-[#727272] text-sm font-bold">Made with love by Finland. All rights reserved.</p>
+                    <div className="flex gap-4">
+                       
+                    </div>
+                </div>
+                </section>
+
 
 
       </div>
-      
     
   );
 }
