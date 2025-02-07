@@ -18,6 +18,7 @@
     "@radix-ui/react-switch": "^1.1.2",
     "@sanity/image-url": "^1.1.0",
     "@sanity/vision": "^3.71.0",
+    "axios": "^1.7.9",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "lucide-react": "^0.468.0",
@@ -35,6 +36,7 @@
     "tailwindcss-animate": "^1.0.7"
   },
   "devDependencies": {
+    "@types/axios": "^0.9.36",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",

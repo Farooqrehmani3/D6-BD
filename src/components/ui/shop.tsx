@@ -7,11 +7,11 @@ import cat2 from "@/app/images/media bg-cover (1).png";
 import cat3 from "@/app/images/media bg-cover (2).png";
 import cat4 from "@/app/images/media bg-cover (3).png";
 import cat5 from "@/app/images/media bg-cover (4).png";
-import frame from "@/app/images/Frame 31.png";
+import frame from "@/app/images/Frame-31.png";
 import clients from "@/app/images/desktop-clients-1.png";
 import axios from "axios";
 
-// Product type for TypeScript
+
 type Product = {
   _id: string;
   title: string;
@@ -34,13 +34,15 @@ export default function Shop() {
         price,
         "imageUrl": productImage.asset->url
       }`;
-
+    
       const url = `https://15hm7ok6.api.sanity.io/v1/data/query/production?query=${encodeURIComponent(query)}`;
-
+    
       try {
-        const response = await axios.get(url);
+        // 👇 Define the response type using generics
+        const response = await axios.get<{ result: Product[] }>(url);
+    
         if (response.data.result) {
-          setProducts(response.data.result);
+          setProducts(response.data.result); // No TypeScript error!
         } else {
           setError("No products found.");
         }
@@ -95,7 +97,7 @@ export default function Shop() {
 
       {/* Clients Section */}
       <div className="py-6">
-        <Image src={clients} alt="clients" className="w-full max-w-screen-lg mx-auto" />
+      <Image src={clients} alt="Clients" width={500} height={300} />
       </div>
 
       {/* Products Section */}
