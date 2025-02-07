@@ -1,5 +1,5 @@
 import React from "react";
-import { FaArrowRight } from "react-icons/fa";
+// import { FaArrowRight } from "react-icons/fa";
 import Image from "next/image";
 // import Link from "next/link";
 // import {
@@ -27,7 +27,7 @@ export default function Home() {
           Innovation tailored for you
         </h1>
         <h5 className="wrap flex justify-center mt-8 gap-6">
-          Home <FaArrowRight /> Team
+          Home / Team
         </h5>
       </div>
 

@@ -1,5 +1,5 @@
 import React from "react"
-import { FaArrowRight } from 'react-icons/fa';
+// import { FaArrowRight } from 'react-icons/fa';
 import { Switch } from "@/components/ui/switch"
 import Image from "next/image";
 // import Link from "next/link";
@@ -29,7 +29,7 @@ export default function pricing() {
             <div className="container mx-11 px-4  w-full h-full   ">
                 <h6 className="text-center mt-10 font-montserrat font-bold text-gray-400">PRICING</h6>
                 <h1 className="font-bold text-5xl text-center font-montserrat mt-10">Simple Pricing</h1>
-                <h5 className="wrap flex justify-center mt-8 gap-6"> Home <FaArrowRight /> Pricing</h5>
+                <h5 className="wrap flex justify-center mt-8 gap-6"> Home / Pricing</h5>
             </div>
 
             {/* // Pricing */}
