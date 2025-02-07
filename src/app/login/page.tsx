@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import { useRouter } from "next/navigation";
-import Footer from "../../../components/Footer";
+// import Footer from "../../../components/Footer";
 import { signIn } from "next-auth/react";
 
 const LoginPage: React.FC = () => {

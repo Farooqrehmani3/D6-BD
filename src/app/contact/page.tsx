@@ -1,23 +1,23 @@
 import Image from "next/image";
-import React, { useRef } from "react";
-import ReactStars from 'react-stars';
-import { Button } from "@/components/ui/button"
-import Link from "next/link";
-import {
-    Search,
-    ShoppingCart,
-    Heart,
-    Phone,
-    Mail,
-    Instagram,
-    Youtube,
-    Facebook,
-    Twitter,
-} from "lucide-react";
+// import React, { useRef } from "react";
+// import ReactStars from 'react-stars';
+// import { Button } from "@/components/ui/button"
+// import Link from "next/link";
+// // import {
+//     Search,
+//     ShoppingCart,
+//     Heart,
+//     Phone,
+//     Mail,
+//     Instagram,
+//     Youtube,
+//     Facebook,
+//     Twitter,
+// } from "lucide-react";
 
 
 
-export default function () {
+export default function Contact() {
     return (
         
         <div>
@@ -62,11 +62,12 @@ export default function () {
                 <Image src="/row1.png" alt="family" height={700} width={700} />
             </div>
 <div className="flex justify-center  mt-11 font-bold">
-    <h5>WE CAN'T WAIT TO MEET YOU</h5>
+<h5>WE CAN&apos;T WAIT TO MEET YOU</h5>
+
 </div>
 
 <div className="flex justify-center  mt-11 font-bold">
-    <h1 className="text-4xl">Let's Talk</h1>
+    <h1 className="text-4xl">Let&apos;s Talk</h1>
 </div>
 <div className="flex justify-center mb-20">
 <button className="bg-blue-500 py-[12px] mt-6 flex justify-center sm:px-[20px] rounded-[5px] text-white font-montserrat">

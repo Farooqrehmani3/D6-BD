@@ -1,49 +1,42 @@
 import React from "react";
 import Image from "next/image";
-import styles from './YourComponent.module.css';
-import ReactStars from 'react-stars';
-import {
-    Select,
-    SelectContent,
-    SelectItem,
-    SelectTrigger,
-    SelectValue,
-} from "@/components/ui/select";
+// import styles from './YourComponent.module.css';
+// import ReactStars from 'react-stars';
+// import {
+//     Select,
+//     SelectContent,
+//     SelectItem,
+//     SelectTrigger,
+//     SelectValue,
+// } from "@/components/ui/select";
 
-import {
-    DropdownMenu,
-    DropdownMenuContent,
-    DropdownMenuItem,
-    DropdownMenuLabel,
-    DropdownMenuSeparator,
-    DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu";
+// import {
+//     DropdownMenu,
+//     DropdownMenuContent,
+//     DropdownMenuItem,
+//     DropdownMenuLabel,
+//     DropdownMenuSeparator,
+//     DropdownMenuTrigger,
+// } from "@/components/ui/dropdown-menu";
 import { Star } from "lucide-react";
 import { Button } from "@/components/ui/button"
 import { Eye } from "lucide-react";
 
 import {
-    Search,
     ShoppingCart,
     Heart,
-    Phone,
-    Mail,
-    Instagram,
-    Youtube,
-    Facebook,
-    Twitter,
-} from "lucide-react";
+   } from "lucide-react";
 
-import {
-    Pagination,
-    PaginationContent,
-    PaginationEllipsis,
-    PaginationItem,
-    PaginationLink,
-    PaginationNext,
-    PaginationPrevious,
-} from "@/components/ui/pagination"
-import Link from "next/link";
+// import {
+//     Pagination,
+//     PaginationContent,
+//     PaginationEllipsis,
+//     PaginationItem,
+//     PaginationLink,
+//     PaginationNext,
+//     PaginationPrevious,
+// } from "@/components/ui/pagination"
+// import Link from "next/link";
 
 
 export default function Header() {
@@ -133,11 +126,13 @@ export default function Header() {
 
                 {/* Left Column (Image) */}
                 <div className="w-[337px] h-[392px]">
-                    <img
-                        src="pinkchair.png"
-                        alt="Example Image"
-                        className="w-full h-full object-cover"
-                    />
+                <Image
+    src="/pinkchair.png"
+    alt="Example Image"
+    className="w-full h-full object-cover"
+    width={500} // Set an appropriate width
+    height={500} // Set an appropriate height
+/>
                 </div>
 
                 {/* Middle Column (Heading + Paragraphs) */}

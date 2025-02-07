@@ -1,13 +1,9 @@
 import React from 'react';
 import Image from "next/image";
-import Header from '../../../components/Header';
-import Link from 'next/link';
-import {
-    Search,
-    ShoppingCart,
-    Heart,
-} from "lucide-react";
-import Footer from '../../../components/Footer';
+// import Header from '../../../components/Header';
+// import Link from 'next/link';
+
+// import Footer from '../../../components/Footer';
 
 export default function about() {
     return (
@@ -89,7 +85,7 @@ export default function about() {
                         {/* Left Column - Text */}
                         <div className="flex flex-col w-full lg:w-1/2 space-y-6">
                             <h4 className="font-sans font-bold text-lg">WORK WITH US</h4>
-                            <h1 className="font-Montserrat font-bold text-4xl lg:text-6xl">Now Let's Grow Yours</h1>
+                            <h1 className="font-Montserrat font-bold text-4xl lg:text-6xl">Now Let&apos;s Grow Yours</h1>
                             <p className="font-sans text-sm max-w-md">
                                 The gradual accumulation of information about atomic and small-scale behavior during the first quarter of the 20th century.
                             </p>

@@ -2,21 +2,21 @@ import React from "react";
 import Image from "next/image";
 
 
-import {
-  Search,
-  ShoppingCart,
-  Heart,
-  Phone,
-  Mail,
-  Instagram,
-  Youtube,
-  Facebook,
-  Twitter,
-} from "lucide-react";
-import Header from "../../components/Header";
-import Link from "next/link"
+// import {
+//   Search,
+//   ShoppingCart,
+//   Heart,
+//   Phone,
+//   Mail,
+//   Instagram,
+//   Youtube,
+//   Facebook,
+//   Twitter,
+// } from "lucide-react";
+// import Header from "../../components/Header";
+// import Link from "next/link"
 import ProductCards from "./products/page";
-import Footer from "../../components/Footer";
+// import Footer from "../../components/Footer";
 
 export default function mainpage() {
   return (
@@ -47,7 +47,7 @@ export default function mainpage() {
       </div>
       {/* Editor's Pick */}
       <div className="text-center my-5 h=1500">
-        <h1 className="font-extrabold text-3xl">EDITOR'S PICK</h1>
+        <h1 className="font-extrabold text-3xl">EDITOR&apos;S PICK</h1>
         <h2>Problems trying to resolve the conflict between</h2>
         <div className="flex item-center col-4 row-3 gap-9">
 
@@ -189,10 +189,13 @@ export default function mainpage() {
         {/* Left Side: Image */}
         <div className="w-full flex flex-col lg:flex-row justify-between lg:justify-start">
           <div className="relative sm:object-right mx-2 flex justify-between">
-            <img
+            <Image
               src="/couple.jpeg"
               alt="Couple"
               className="max-w-[500px] sm:max-w-[800px] lg:w-[725px] lg:h-[474px] object-cover lg:ml-18"
+              width={725}
+              height={474}
+              priority
             />
           </div>
 
@@ -238,106 +241,117 @@ export default function mainpage() {
 
         {/* Posts Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 px-4 max-w-5xl mx-auto">
-  <div className="bg-white shadow-md rounded-lg overflow-hidden hover:scale-105 hover:shadow-xl transition-transform duration-300 ease-in-out">
-    {/* Post Image */}
-    <div className="relative">
-      <img
-        src="/road.jpg"
-        alt="Sample Post"
-        className="w-full h-40 object-cover"
-      />
-      <span className="absolute top-2 left-2 bg-red-500 text-white text-sm font-bold px-2 py-1 rounded">
-        New
-      </span>
-    </div>
+          <div className="bg-white shadow-md rounded-lg overflow-hidden hover:scale-105 hover:shadow-xl transition-transform duration-300 ease-in-out">
+            {/* Post Image */}
+            <div className="relative">
+              <Image
+                src="/road.jpg"
+                alt="Sample Post"
+                className="w-full h-40 object-cover"
+                width={800}
+                height={160}
+                priority
+              />
+              <span className="absolute top-2 left-2 bg-red-500 text-white text-sm font-bold px-2 py-1 rounded">
+                New
+              </span>
+            </div>
 
-    {/* Post Content */}
-    <div className="p-3">
-      <h3 className="text-md font-semibold text-gray-800">Sample Post Title</h3>
-      <p className="text-gray-600 text-sm mt-2">
-        This is a sample description for the post.
-      </p>
-      <div className="flex justify-between items-center text-gray-500 text-xs mt-4">
-        <span>April 22, 2021</span>
-        <span>5 comments</span>
-      </div>
-      <a
-        href="#"
-        className="text-blue-500 text-xs font-medium mt-4 inline-block hover:underline"
-      >
-        Learn More →
-      </a>
-    </div>
-  </div>
-
-  <div className="bg-white shadow-md rounded-lg overflow-hidden hover:scale-105 hover:shadow-xl transition-transform duration-300 ease-in-out">
-    {/* Post Image */}
-    <div className="relative">
-      <img
-        src="/foxy.jpg"
-        alt="Another Sample Post"
-        className="w-full h-40 object-cover"
-      />
-      <span className="absolute top-2 left-2 bg-red-500 text-white text-sm font-bold px-2 py-1 rounded">
-        New
-      </span>
-    </div>
-
-    {/* Post Content */}
-    <div className="p-3">
-      <h3 className="text-md font-semibold text-gray-800">Another Post Title</h3>
-      <p className="text-gray-600 text-sm mt-2">
-        Another description for a different post.
-      </p>
-      <div className="flex justify-between items-center text-gray-500 text-xs mt-4">
-        <span>April 22, 2021</span>
-        <span>12 comments</span>
-      </div>
-      <a
-        href="#"
-        className="text-blue-500 text-xs font-medium mt-4 inline-block hover:underline"
-      >
-        Learn More →
-      </a>
-    </div>
-  </div>
-
-  <div className="relative bg-white shadow-md rounded-lg overflow-hidden hover:scale-105 hover:shadow-xl transition-transform duration-300 ease-in-out">
-    {/* Post Image */}
-    <img
-      src="/umbrella.jpg"
-      alt="Sample Post"
-      className="w-full h-40 object-cover"
-    />
-    <span className="absolute top-2 left-2 bg-red-500 text-white text-sm font-bold px-2 py-1 rounded">
-      NEW
-    </span>
-    <div className="p-3">
-      <h3 className="text-md font-semibold text-gray-800">Sample Post Title</h3>
-      <p className="text-gray-600 text-sm mt-2">
-        This is a sample description for the post.
-      </p>
-      <div className="flex justify-between items-center text-gray-500 text-xs mt-4">
-        <span>April 22, 2021</span>
-        <span>5 comments</span>
-      </div>
-      <a
-        href="#"
-        className="text-blue-500 text-xs font-medium mt-4 inline-block hover:underline"
-      >
-        Learn More →
-      </a>
-    </div>
-  </div>
-</div>
-
-          {/* Add more posts manually as needed */}
-          <div>
-            <ProductCards />
+            {/* Post Content */}
+            <div className="p-3">
+              <h3 className="text-md font-semibold text-gray-800">Sample Post Title</h3>
+              <p className="text-gray-600 text-sm mt-2">
+                This is a sample description for the post.
+              </p>
+              <div className="flex justify-between items-center text-gray-500 text-xs mt-4">
+                <span>April 22, 2021</span>
+                <span>5 comments</span>
+              </div>
+              <a
+                href="#"
+                className="text-blue-500 text-xs font-medium mt-4 inline-block hover:underline"
+              >
+                Learn More →
+              </a>
+            </div>
           </div>
 
+          <div className="bg-white shadow-md rounded-lg overflow-hidden hover:scale-105 hover:shadow-xl transition-transform duration-300 ease-in-out">
+            {/* Post Image */}
+            <div className="relative">
+              <Image
+                src="/foxy.jpg"
+                alt="Another Sample Post"
+                className="w-full h-40 object-cover"
+                width={800}
+                height={160}
+                priority
+              />
+              <span className="absolute top-2 left-2 bg-red-500 text-white text-sm font-bold px-2 py-1 rounded">
+                New
+              </span>
+            </div>
+
+            {/* Post Content */}
+            <div className="p-3">
+              <h3 className="text-md font-semibold text-gray-800">Another Post Title</h3>
+              <p className="text-gray-600 text-sm mt-2">
+                Another description for a different post.
+              </p>
+              <div className="flex justify-between items-center text-gray-500 text-xs mt-4">
+                <span>April 22, 2021</span>
+                <span>12 comments</span>
+              </div>
+              <a
+                href="#"
+                className="text-blue-500 text-xs font-medium mt-4 inline-block hover:underline"
+              >
+                Learn More →
+              </a>
+            </div>
+          </div>
+
+          <div className="relative bg-white shadow-md rounded-lg overflow-hidden hover:scale-105 hover:shadow-xl transition-transform duration-300 ease-in-out">
+            {/* Post Image */}
+
+            <Image
+              src="/umbrella.jpg"
+              alt="Sample Post"
+              className="w-full h-40 object-cover"
+              width={800}
+              height={160}
+              priority
+            />
+
+            <span className="absolute top-2 left-2 bg-red-500 text-white text-sm font-bold px-2 py-1 rounded">
+              NEW
+            </span>
+            <div className="p-3">
+              <h3 className="text-md font-semibold text-gray-800">Sample Post Title</h3>
+              <p className="text-gray-600 text-sm mt-2">
+                This is a sample description for the post.
+              </p>
+              <div className="flex justify-between items-center text-gray-500 text-xs mt-4">
+                <span>April 22, 2021</span>
+                <span>5 comments</span>
+              </div>
+              <a
+                href="#"
+                className="text-blue-500 text-xs font-medium mt-4 inline-block hover:underline"
+              >
+                Learn More →
+              </a>
+            </div>
+          </div>
         </div>
- 
+
+        {/* Add more posts manually as needed */}
+        <div>
+          <ProductCards />
+        </div>
+
+      </div>
+
     </div>
 
 

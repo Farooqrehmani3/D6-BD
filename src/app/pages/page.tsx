@@ -1,18 +1,18 @@
 import React from "react";
 import { FaArrowRight } from "react-icons/fa";
 import Image from "next/image";
-import Link from "next/link";
-import {
-  Search,
-  ShoppingCart,
-  Heart,
-  Phone,
-  Mail,
-  Instagram,
-  Youtube,
-  Facebook,
-  Twitter,
-} from "lucide-react";
+// import Link from "next/link";
+// import {
+//   Search,
+//   ShoppingCart,
+//   Heart,
+//   Phone,
+//   Mail,
+//   Instagram,
+//   Youtube,
+//   Facebook,
+//   Twitter,
+// } from "lucide-react";
 
 
 export default function Home() {

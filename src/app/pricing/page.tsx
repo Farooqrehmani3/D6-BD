@@ -2,24 +2,24 @@ import React from "react"
 import { FaArrowRight } from 'react-icons/fa';
 import { Switch } from "@/components/ui/switch"
 import Image from "next/image";
-import Link from "next/link";
- import {
-    Search,
-    ShoppingCart,
-    Heart,
-    Phone,
-    Mail,
-    Instagram,
-    Youtube,
-    Facebook,
-    Twitter,
-  } from "lucide-react";
+// import Link from "next/link";
+//  import {
+//     Search,
+//     ShoppingCart,
+//     Heart,
+//     Phone,
+//     Mail,
+//     Instagram,
+//     Youtube,
+//     Facebook,
+//     Twitter,
+//   } from "lucide-react";
 
 
 
 
 
-export default function () {
+export default function pricing() {
     return (
         
         // Mian div
@@ -86,7 +86,7 @@ export default function () {
                         </p>
                     </div>
                 ))}
-                <h5 className="text-gray-400 flex justify-center font-sans">Haven't got your answer? Contact out support</h5>
+                <h5 className="text-gray-400 flex justify-center font-sans">Haven&apos;t got your answer? Contact out support</h5>
             </div>
 
             {/* Start your 14 days trial free */}

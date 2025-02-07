@@ -6,19 +6,19 @@ import { createClient } from "@sanity/client";
 import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
-import { Button } from "@/components/ui/button";
-import { useRouter } from "next/navigation"; // 
+// import { Button } from "@/components/ui/button";
+// import { useRouter } from "next/navigation"; // 
 import {  CSSProperties } from "react";
 
 
-import {
-  Select,
-  SelectTrigger,
-  SelectValue,
-  SelectContent,
-  SelectItem,
-} from "@/components/ui/select";
-import { Search, ShoppingCart, Heart } from "lucide-react";
+// import {
+//   Select,
+//   SelectTrigger,
+//   SelectValue,
+//   SelectContent,
+//   SelectItem,
+// } from "@/components/ui/select";
+// import { Search, ShoppingCart, Heart } from "lucide-react";
 
  const submitButtonStyle: CSSProperties = {
     padding: "10px",
